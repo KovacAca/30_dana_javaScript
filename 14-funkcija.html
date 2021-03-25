@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS - Funkcije</title>
+</head>
+<body>
+  <h1>Funkcije</h1>
+  <hr>
+  <script>
+    // funkcija je blok koda koji mozemo kasnije da pozovemo vise puta
+    function webcon() {
+      var radionica = '30 dana kodiranja';
+      //console.log(radionica);
+    }
+    //Moramo je pozvati:
+    webcon();
+
+    function radionice(x) {
+      console.log(x);
+    };
+    radionice('30 dana kodiranja');
+    radionice('wp custom teme');
+    radionice('themify bilder');
+
+    function racunskeOperacije(a, b) {
+      console.log(a + b);
+      console.log(a - b);
+      console.log(a * b);
+      console.log(a / b);
+      console.log(a % b);
+    };
+    racunskeOperacije(20, 2); //18
+    racunskeOperacije(42, 2); //18
+
+  </script>
+</body>
+</html>
