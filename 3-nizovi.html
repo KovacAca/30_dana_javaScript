@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javaScript - nizovi</title>
+  <style>
+    body {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nizovi</h1>
+  <p>Nizovi su promenljive koje imaju vise vrednosti u isto vreme</p>
+  <p>Pisu se u uglastim zagradama</p>
+  <hr>
+
+  <script>
+    var promenljiva = 'js';
+    var mojNiz = ['html', 'css', 'bootstrap', 'javaScript', 'php', 'wordpress'];
+    console.log(mojNiz[0]); // html
+    console.log(mojNiz[1]); // css
+    document.writeln(mojNiz[3]); //javaScript
+    document.write('<br>');      
+    document.write(mojNiz.length); // 6
+    document.write('<br>');
+    // Niz mozemo kreirati i na novi nacin:
+    var drugiNacin = new Array('React', ' React Native', ' Vue JS', ' Angular', ' Jquery', ' Ionic');
+    document.write(drugiNacin.length); //6
+    document.write('<br>');
+    document.write(drugiNacin[2]);
+    document.write('<br>');
+    
+    var niz = ['Slobodan', ' Miric ', 43, ' web developer', ' ukulele player'];
+    document.write(niz);
+    document.write('<br>');
+    //Mozemo promeniti vrednost niz[0]
+    niz[0] = niz[0] + niz[1] + ' je' + niz[3];
+    document.write(niz[0]);
+    document.write('<br>');
+    niz[1] = niz[2] - 38;
+    document.write(niz[0] + ' sa ' + niz[1] + ' godina iskustva, koji u slobodno vreme voli da svira' + niz[4]);
+    document.write('<br>');
+    
+  </script>
+</body>
+</html>
