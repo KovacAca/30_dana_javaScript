@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS - Boolean</title>
+</head>
+<body>
+  <h1>Boolean</h1>
+  <p>To je kada ispitujemo da li je nesto istina ili nije</p>
+  <hr>
+
+  <script>
+    console.log(100 == 100);
+    console.log(200 == 100);
+    console.log(100 == '100'); //true
+    console.log('Malo slovo' == 'malo slovo');  //false
+
+    var nekiNiz = [2, 4, 6];
+    var drugiNiz = [2, 4, 6];
+    console.log(nekiNiz === drugiNiz); //false(ne porede se)
+
+    var jmbg = 0312973810032;
+    if(jmbg === 0312973810032) {
+      console.log('tacno');
+    } else {
+      console.log('nije');
+    }
+
+    var lk = parseInt(prompt('Unesite br.lk'));
+    if(lk === 246) {
+      console.log('br.je ispr.');
+    } else {
+      console.log('neispravan');
+    }
+  </script>
+  
+</body>
+</html>
