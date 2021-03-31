@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS - Class</title>
+</head>
+<body>
+  <h1>Class</h1>
+  <hr>
+  <script>
+
+    class NekaFirma {
+      constructor(ime, pozicija) {
+        this.ime = ime;
+        this.pozicija = pozicija;
+      }
+      predjasnjeIskustvo() {
+        console.log('Junior');
+      }
+    }
+    //Child klase(nasledjivanje)
+    class Designer extends NekaFirma {
+      constructor(ime, pozicija, sertifikati) {
+        super(ime, pozicija);
+        this.sertifikati = sertifikati;
+      }
+    }
+    let graphicDesigner = new Designer('Svetlana', 'graficki designer', 'Adobe Photoshop');
+    console.log(graphicDesigner.sertifikati);
+    console.log(graphicDesigner);
+
+    class Copyrighter extends NekaFirma {
+
+    }
+    let copyrighter = new Copyrighter('Zorica', 'kopirajter');
+    console.log(copyrighter);
+
+    graphicDesigner.predjasnjeIskustvo();
+    
+    
+    // pravimo instancu klase
+    // let designer = new NekaFirma('Josip', 'designer');
+    // let beDev = new NekaFirma('Srdjan', "back and dev");
+    // console.log(designer);
+    // console.log(beDev);
+
+
+  </script>
+  
+</body>
+</html>

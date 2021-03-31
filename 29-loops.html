@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS - Loops</title>
+</head>
+<body>
+  <h1>Loops</h1>
+  <hr>
+  <script>
+
+    //let radionice = ['30 dana kodiranja', 'Custom WP theme', 'Themify'];
+    // for(i = 0; i < radionice.length; i++) {
+    //   console.log(radionice[i]);
+     //}
+     //Isto to mozemo dobiti i ovako:
+    //  radionice.forEach((radionice => {
+    //    console.log(radionice);
+    //  }))
+
+    //  // Skracena arrow funkcija
+    //  radionice.forEach(radionice => console.log(radionice))
+
+    //  //Moze i for loop:
+    //  for(const i of radionice) {
+    //    console.log(i);
+    //  }
+
+    //  const velikaSlova = radionice.map(i => {
+    //    return i.toUpperCase();
+    // })
+    // console.log(velikaSlova);
+
+    const zaposleni = [
+      {
+        ime: 'Slobodan',
+        pozicija: 'WPdev'
+      },
+      {
+        ime: 'Dejan',
+        pozicija: 'FEdev'
+      },
+      {
+        ime: 'Srdjan',
+        pozicija: 'BEdev'
+      },
+      {
+        ime: 'Svetlana',
+        pozicija: 'FEdev'
+      }
+    ];
+    const frontDev = zaposleni.filter(zaposleni => zaposleni.pozicija == 'FEdev');
+    console.log(frontDev);
+
+
+
+
+
+  </script>
+</body>
+</html>
