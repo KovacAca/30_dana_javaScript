@@ -1,0 +1,28 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+td:first-child {
+  width: 100%;
+  margin-left: 33px;
+}
+h1 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 30px;
+}
+.namirnica {
+  margin-left: 33px;
+  width: 400px;
+}
+.dodavanje {
+  margin-left: 33px;
+}
