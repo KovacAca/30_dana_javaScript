@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JQUERY</title>
+  <!-- jquery mozemo pisati i u head-u ali nam treba funkcija koja nam to omogucuje -->
+  <!-- <script src="jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('heading').hide(3000);
+    });
+  </script> -->
+  <style>
+    body {
+      font-size: 30px;
+    }
+    span {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="heading">Instalacija</h1>
+  <p class="first">Prvi nacin - CDN</p>
+  <p><a href="https://code.jquery.com/">https://code.jquery.com/</a></p>
+  <p>jQuery 3.x - <span>uncompressed</span></p>
+  <hr>
+
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+  <p>Drugi nacin(bolji) - download</p>
+  <a href=" https://jquery.com/download/"> https://jquery.com/download/</a>
+  <script src="jquery.js"></script>
+  <script>
+    jQuery('p').hide(3000);
+    $('first').hide(4000);
+    $('#heading').hide(000);
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
